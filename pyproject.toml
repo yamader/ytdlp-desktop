@@ -2,10 +2,7 @@
 name = "ytdlp-desktop"
 version = "0.1.0"
 description = "Simple GUI for yt-dlp"
-dependencies = [
-    "flet>=0.20.1",
-    "yt-dlp",
-]
+dependencies = ["flet>=0.20.1", "yt-dlp"]
 readme = "README.md"
 requires-python = ">= 3.8"
 
@@ -15,12 +12,11 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = [
-    "nuitka>=2.0.2",
-]
+dev-dependencies = ["nuitka>=2.0.2"]
 
 [tool.rye.scripts]
 exe = "nuitka3 --onefile src/ytdlp_desktop"
+exe-win = "nuitka.bat --onefile src/ytdlp_desktop"
 
 [tool.hatch.metadata]
 allow-direct-references = true

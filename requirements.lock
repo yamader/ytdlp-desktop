@@ -27,6 +27,9 @@ charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via cookiecutter
+colorama==0.4.6
+    # via click
+    # via qrcode
 cookiecutter==2.5.0
     # via flet
 flet==0.20.1
