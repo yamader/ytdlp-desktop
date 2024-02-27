@@ -6,6 +6,5 @@ Simple GUI for yt-dlp
 
 ```sh
 rye sync
-.venv\Scripts\activate
 rye run exe-win
 ```
